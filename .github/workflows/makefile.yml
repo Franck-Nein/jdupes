@@ -22,7 +22,7 @@ jobs:
       with:
             name: jdupes
             path: |
-              ../libjodycode/libjodycode.so
-              ../libjodycode/libjodycode.so.3
-              ../libjodycode/libjodycode.so.3.1
-              jdupes
+              /home/runner/work/libjodycode/libjodycode.so
+              /home/runner/work/libjodycode/libjodycode.so.3
+              /home/runner/work/libjodycode/libjodycode.so.3.1
+              /home/runner/work/jdupes/jdupes
