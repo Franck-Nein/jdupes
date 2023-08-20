@@ -15,5 +15,10 @@ jobs:
     - uses: actions/checkout@v3
 
     - name: Install dependencies
-      run: sudo apt install build-essential ; git clone https://github.com/jbruchon/libjodycode ../libjodycode ; pushd ../libjodycode ; make -j2 ; popd ; make -j2;
-      
+      run: sudo apt install build-essential ; git clone https://github.com/jbruchon/libjodycode ../libjodycode ; pushd ../libjodycode ; make -j2 ; popd ; make -j2; pwd;
+
+    - name: Upload Artifacts
+      uses: actions/upload-artifact@main
+        with:
+          name: jdupes
+          path: ./jdupes
